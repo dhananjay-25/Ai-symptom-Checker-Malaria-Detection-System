@@ -58,7 +58,7 @@ def markdown_filter(text):
     return markdown2.markdown(text)
 
 # Configure Gemma model via Google Generative AI
-GOOGLE_API_KEY = "AIzaSyCZhNimZq820rBzxUi4VQQYIyIHIHsormY"  #
+GOOGLE_API_KEY = "API_KEY"  #
 genai.configure(api_key=GOOGLE_API_KEY)
 MODEL_NAME = "gemma-3-4b-it"
 
@@ -252,4 +252,5 @@ def generate_report(patient_id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
