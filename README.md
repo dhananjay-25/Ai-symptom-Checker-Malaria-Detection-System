@@ -34,7 +34,10 @@ The system is designed with a **clear separation** between AI-assisted initial a
 
 **Other:**
 - FPDF for automated PDF medical reports
-- Werkzeug for secure file uploads
+
+## 🎥 Demo Video
+
+[![Watch the Demo](https://img.youtube.com/vi/gL4BP7JxOCI/0.jpg)](https://youtu.be/gL4BP7JxOCI))
 
 ---
 
@@ -110,3 +113,52 @@ The system is designed with a **clear separation** between AI-assisted initial a
 ```bash
 git clone https://github.com/your-username/malaria-ai-symptom-checker.git
 cd malaria-ai-symptom-checker
+```
+### 2️⃣ Create Virtual Environment
+
+`python -m venv venv
+source venv/bin/activate   # Mac/Linux
+venv\Scripts\activate     # Windows`
+
+### 3️⃣ Install Dependencies
+
+`pip install -r requirements.txt`
+
+### 4️⃣ Set Google API Key
+
+Create a `.env` file and add:
+
+`GOOGLE_API_KEY=your_google_api_key_here`
+
+### 5️⃣ Initialize Database
+
+`python
+from app import db
+db.create_all()`
+
+### 6️⃣ Run the Application
+
+`python app.py`
+
+## 📊 Future Enhancements
+----------------------
+
+-   Support for multiple diseases via additional deep learning models
+
+-   Integration with cloud-hosted ML models for faster inference
+
+-   Patient login & report history
+
+-   Multi-language support for AI symptom checker
+
+
+### ⚠️ Disclaimer
+-------------
+
+The AI Symptom Checker provides **informational output only** and is **not a medical diagnosis**. Final diagnosis is based on laboratory image analysis by the CNN model.
+
+### 👨‍💻 Author
+------------
+
+**Dhananjay Chandel**
+
