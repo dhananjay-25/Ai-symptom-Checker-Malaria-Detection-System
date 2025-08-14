@@ -126,9 +126,20 @@ venv\Scripts\activate     # Windows`
 
 ### 4️⃣ Set Google API Key
 
-Create a `.env` file and add:
+You will need a Google AI Studio API key to use the `gemma-3-4b-it` model.
 
+#### 📌 Steps to get your API Key:
+1. Go to **[Google AI Studio](https://aistudio.google.com/app/apikey)**  
+2. Sign in with your Google account.  
+3. Click on **"Create API Key"**.  
+4. Copy the generated API key.  
+5. In the app.py file in the api key variable add:
 `GOOGLE_API_KEY=your_google_api_key_here`
+6. Save the file and restart your Flask server.
+
+#### 🔗 Reference:
+- Official Docs: [Google Generative AI Python SDK](https://ai.google.dev/gemini-api/docs/get-started/python)
+
 
 ### 5️⃣ Initialize Database
 
